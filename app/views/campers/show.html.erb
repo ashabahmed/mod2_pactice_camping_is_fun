@@ -1,0 +1,14 @@
+<h1><%=@camper.name%></h1>
+<hr>
+
+<h3>Age: <%=@camper.age%></h3>
+
+
+<h3><b>Activities:</b></h3>
+<ul>
+    <%@camper.activities.each do |a|%>
+    <li><%=a.name%>, (difficulty:</b>  <%=a.difficulty%>)</li>
+    
+<%end%>
+
+</ul>
